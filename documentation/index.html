@@ -1,0 +1,531 @@
+<!doctype html>
+<!--[if IE 6 ]>
+<html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>YouTube Coins - (Media Script + Points System)</title>
+
+    <meta name="description" content="YouTube Coins - (Media Script + Points System):
+                It has been built from scratch with features and performance in mind.
+            With this awesome script you are able to build your youtube media website in under 3 minutes using the super easy and simple installer.">
+    <meta name="author" content="PHP POWER ARTS">
+    <meta name="copyright" content="PHP POWER ARTS">
+    <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+    <meta name="date" content="2014-12-29T00:00:00+01:00">
+
+    <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+
+    <script>document.createElement('section');
+    var duration = '500', easing = 'swing';</script>
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        html {
+            background-color: #FFFFFF;
+            color: #383838;
+        }
+
+        ::-moz-selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        ::selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        #documenter_sidebar #documenter_logo {
+            background-image: url(assets/images/image_1.png);
+        }
+
+        a {
+            color: #0000FF;
+        }
+
+        .btn {
+            border-radius: 3px;
+        }
+
+        .btn-primary {
+            background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -webkit-gradient(linear, 0 0, 0 0088 CC%, from(#FFFFFF), to(#0044CC));
+            background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+            background-image: linear-gradient(top, #0088CC, #0044CC);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+            border-color: #0044CC #0044CC #bfbfbf;
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+            border-color: #0088CC #0088CC #bfbfbf;
+            background-color: #0044CC;
+        }
+
+        hr {
+            border-top: 1px solid #EBEBEB;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        #documenter_sidebar, #documenter_sidebar ul a {
+            background-color: #FFFFFF;
+            color: #222222;
+        }
+
+        #documenter_sidebar ul a {
+            -webkit-text-shadow: 1px 1px 0px #EEEEEE;
+            -moz-text-shadow: 1px 1px 0px #EEEEEE;
+            text-shadow: 1px 1px 0px #EEEEEE;
+        }
+
+        #documenter_sidebar ul {
+            border-top: 1px solid #AAAAAA;
+        }
+
+        #documenter_sidebar ul a {
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #AAAAAA;
+            color: #444444;
+        }
+
+        #documenter_sidebar ul a:hover {
+            background: #444444;
+            color: #DDDDDD;
+            border-top: 1px solid #444444;
+        }
+
+        #documenter_sidebar ul a.current {
+            background: #444444;
+            color: #DDDDDD;
+            border-top: 1px solid #444444;
+        }
+
+        #documenter_copyright {
+            display: block !important;
+            visibility: visible !important;
+        }
+    </style>
+
+</head>
+<body class="documenter-project-hdphp-how-to-do-">
+<div id="documenter_sidebar">
+    <a href="#documenter_cover" id="documenter_logo"></a>
+    <ul id="documenter_nav">
+        <li><a class="current" href="#documenter_cover">Start</a></li>
+
+        <li><a href="#about" title="About">About</a></li>
+        <li><a href="#features" title="Features">Features</a></li>
+        <li><a href="#requeriments" title="Requeriments">Requeriments</a></li>
+        <li><a href="#demo_account_information" title="Demo Account Information">Demo Account Information</a></li>
+        <li><a href="#quick_start_videos" title="QUICK START VIDEOS">QUICK START VIDEOS</a></li>
+        <li><a href="#install_upgrade" title="INSTALL & UPGRADE">INSTALL & UPGRADE</a></li>
+        <li><a href="#installation" title="INSTALLATION">INSTALLATION</a></li>
+        <li><a href="#how_to_add_articles" title="How To Add Articles" class="current">How To Add Video</a></li>
+        <li><a href="#customize_your_own_site" title="Customize your own site." class="">Customize your own site.</a></li>
+        <li><a href="#upgrading" title="UPGRADING">UPGRADING</a></li>
+        <li><a href="#support" title="Support">Support</a></li>
+
+    </ul>
+    <div id="documenter_copyright">Copyright PHP POWER ARTS 2015<br>
+        made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
+    </div>
+</div>
+<div id="documenter_content">
+    <section id="documenter_cover">
+        <h1>Youtube Coins </h1>
+
+        <h2>YouTube Coins - (Media Script + Points System)</h2>
+
+        <div id="documenter_buttons">
+
+        </div>
+        <hr>
+        <ul>
+            <li>created: 10/5/2015</li>
+            <li>latest update: 10/5/2015</li>
+            <li>by: PHP POWER ARTS</li>
+            <li><a href="http://youlevelup.byethost11.com/">Demo</a></li>
+            <li>email: <a
+                    href="mailto:&#112;&#104;&#112;&#46;&#112;&#111;&#119;&#101;&#114;&#46;&#97;&#114;&#116;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+                &#112;&#104;&#112;&#46;&#112;&#111;&#119;&#101;&#114;&#46;&#97;&#114;&#116;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+            </li>
+        </ul>
+        <p>Thank you</p>
+    </section>
+
+    <section id="about">
+        <div class="page-header"><h3>About</h3>
+            <hr class="notop">
+        </div>
+        <div>
+            YouTube Coins - (Media Script + Points System) is a media Script , its allow users to get much more viewing to there youtube videos.
+                This script is so easy to install and customize to make
+                it your own. Users can sign up with google account or any Email.
+                .
+        </div>
+        <div>
+            &nbsp;</div>
+        <div>
+            This script allows users to add and view youtube videos and earn coins.
+        </div>
+        <div>&nbsp;</div>
+    </section>
+    <section id="features">
+        <div class="page-header"><h3>Features</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            <span style="color: rgb(85, 85, 85); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
+                YouTube Coins - (Media Script + Points System):
+                It has been built from scratch with features and performance in mind.
+            With this awesome script you are able to build your youtube media website in under 3 minutes using the super easy and simple installer.<br/>
+            its allow users to get much more viewing to there youtube videos.
+            </span>
+        </p>
+        <ul>
+            <li>Seo Friendly.&nbsp;</li>
+            <li>Open Graph Protocol</li>
+            <li>Pretty Points System with full admin controll</li>
+            <li>Add your custom css code.</li>
+            <li>Customize Your Site logo.</li>
+            <li>Customize Your Favorite icon.</li>
+            <li>Customize Your watermark icon.</li>
+            <li>Customize Website seo keywords,description and Page title.</li>
+            <li>Customize Website name.</li>
+            <li>Customize Points Setting</li>
+            <li style="box-sizing: border-box;">Users can Add youtube video.</li>
+            <li>Smart Upgrade button</li>
+            <li>Super Easy Install &amp; Full Customization.</li>
+            <li>
+                Allows Logging In &amp; Sign up.
+            </li>
+            <li>
+                Allows Logging In via google account.
+            </li>
+            <li>
+                Change ui theme with 4 themes .
+            </li>
+            <li>
+                User Accounts.
+            </li>
+            <li>
+                Power Full Admin Controls.
+            </li>
+            <li>
+                100% Responsive.
+            </li>
+            <li>
+                Friendly Interface.
+            </li>
+            <li>
+                Regular Updates.
+            </li>
+            <li>
+                Support Ads (Adsense,adchoice and any html code you need or images).
+            </li>
+            <li>
+                Add languages.
+            </li>
+            <li>
+                delete users video from the admin account.
+            </li>
+
+            <li>
+                Codeigniter v2.2
+            </li>
+            <li>uikit-2.20.2</li>
+            <li>
+                Register Users
+            </li>
+            <li style="box-sizing: border-box;">
+                Advertising ready
+            </li>
+            <li style="box-sizing: border-box;">
+                View Youtube Videos and earn Coins
+            </li>
+            <li>
+                Reorder users video according to the coins in balance
+            </li>
+            <li style="box-sizing: border-box;">
+                <strong style="box-sizing: border-box;">Manage users:</strong>&nbsp;Allows you to manage registered users.
+            </li>
+            <li style="box-sizing: border-box;">
+                <strong style="box-sizing: border-box;">Manage videos:</strong>&nbsp;Allows you to manage videos Written
+                by
+                users (active and delete).
+            </li>
+            <li style="box-sizing: border-box;">
+                <b>Edit css file</b></li>
+            <li style="box-sizing: border-box;">
+                <b>Manage Languages.</b></li>
+            <li style="box-sizing: border-box;">
+                And much, much more
+            </li>
+        </ul>
+        <p style="box-sizing: border-box;">
+            &nbsp;</p>
+    </section>
+    <section id="requeriments">
+        <div class="page-header"><h3>Requeriments</h3>
+            <hr class="notop">
+        </div>
+        <ul style="box-sizing: border-box; list-style-position: initial; list-style-image: initial; margin: 0px 0px 20px; padding-right: 0px; padding-left: 25px; color: rgb(85, 85, 85); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
+            <li style="box-sizing: border-box;">
+                Operating System : Linux
+            </li>
+            <li style="box-sizing: border-box;">
+                Web Server : Apache
+            </li>
+            <li style="box-sizing: border-box;">
+                PHP Version: 5.0 or Higher
+            </li>
+            <li style="box-sizing: border-box;">
+                PHP mod_rewrite Enabled
+            </li>
+            <li style="box-sizing: border-box;">
+                MySQL 4.1 or later, MySQL 5.x for best performance.
+            </li>
+        </ul>
+    </section>
+    <section id="demo_account_information">
+        <div class="page-header"><h3>Demo Account Information</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            username: &#100;&#101;&#109;&#111;&#64;&#100;&#101;&#109;&#111;&#46;&#99;&#111;&#109;</p>
+        <p>
+            password: 123456</p>
+    </section>
+    <section id="quick_start_videos">
+        <div class="page-header"><h3>QUICK START VIDEOS</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            video - 01</p>
+
+        <p>
+            <iframe allowfullscreen="" frameborder="0" height="480"
+                    src="http://www.youtube.com/embed/w-d0Wl886x4?rel=0&amp;controls=0" width="853"></iframe>
+        </p>
+        <p>
+            &nbsp;</p>
+
+        <p>
+            video - 02 - Sign up And login Guide</p>
+
+        <p>
+            <iframe allowfullscreen="" frameborder="0" height="480"
+                    src="http://www.youtube.com/embed/yuB_F-m0eTE?rel=0&amp;controls=0" width="853"></iframe>
+        </p>
+    </section>
+    <section id="install_upgrade">
+        <div class="page-header"><h3>INSTALL & UPGRADE</h3>
+            <hr class="notop">
+        </div>
+    </section>
+    <section id="installation">
+        <div class="page-header"><h3>INSTALLATION</h3>
+            <hr class="notop">
+        </div>
+        <p style="margin: 0px; padding: 10px 0px; border: 0px; outline: 0px; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 13px; vertical-align: baseline; box-sizing: border-box; color: rgb(80, 80, 80); line-height: 20.7999992370605px;">
+            Installing the script is very easy. Follow the steps below to install this script on a local machine or on
+            your server. If you do not currently have a server.</p>
+        <ol style="margin: 0px 0px 0px 20px; padding: 10px 0px; border: 0px; outline: 0px; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 13px; vertical-align: baseline; list-style: none; box-sizing: border-box; color: rgb(80, 80, 80); line-height: 20.7999992370605px;">
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                Move all the files inside of the &lsquo;jarvis&rsquo; folder to the root of your website.
+            </li>
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                Create a new database on your server and give it any name you would like to use.
+            </li>
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                <p style="margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+                    Navigate to &lsquo;yourwebsite.com&rsquo; and you will be presented with an install screen. The
+                    install screen should look similar to the following image:&nbsp;</p>
+            </li>
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                <p style="margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+                    <img alt="" src="assets/images/image_2.png" style="width: 728px; height: 619px;"></p>
+            </li>
+        </ol>
+        <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+            5. On the install screen, you&rsquo;ll want to add your Admin Username, Email, and Password. Next you&rsquo;ll
+            &nbsp; &nbsp; &nbsp; &nbsp; enter your database info including your Database Host, Name, User, and
+            Password.</p>
+
+        <p style="list-style-type: decimal; margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+            <span style="font-family: inherit; font-style: inherit; font-weight: inherit;">6.Click install and if everything went through correctly, you should see a screen similar to the following:&nbsp;</span>
+        </p>
+
+        <p style="list-style-type: decimal; margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+            <span style="font-family: inherit; font-style: inherit; font-weight: inherit;"><img alt=""
+                                                                                                src="assets/images/image_3.png"
+                                                                                                style="width: 657px; height: 351px;"></span>
+        </p>
+
+        <p style="list-style-type: decimal; margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+            &nbsp;</p>
+
+        <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+            7. Then just &lsquo;Click Here to Visit Your Site&rsquo; and you&rsquo;ll be taken to your new site.</p>
+
+        <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+            &nbsp;</p>
+
+        <p style="margin: 0px; padding: 10px 0px; border: 0px; outline: 0px; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 13px; vertical-align: baseline; box-sizing: border-box; color: rgb(80, 80, 80); line-height: 20.7999992370605px;">
+            Note, if you are having trouble installing, don&#39;t hesitate to sent message to me to support you at
+            &#112;&#104;&#112;&#46;&#112;&#111;&#119;&#101;&#114;&#46;&#97;&#114;&#116;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;.</p>
+
+        <div>
+            &nbsp;</div>
+    </section>
+    <section id="how_to_add_articles">
+        <div class="page-header"><h3>How To Add Video</h3><hr class="notop"></div>
+        <div>
+            <div>
+                &nbsp;</div>
+            <div>
+                &nbsp;</div>
+            <ol style="font-family: arial, sans-serif; font-size: small;">
+                <li>
+                    <span style="font-family: Arial, Verdana, sans-serif;">at first you have to do sign up at the website.</span></li>
+                <li>
+                    <span style="font-family: Arial, Verdana, sans-serif;">after login click Add My Video.</span></li>
+                <li>every video spend 10 coins for example</li>
+                <li>
+                    <span style="font-family: Arial, Verdana, sans-serif;">select suitable language for your video&nbsp;</span>(required).</li>
+                <li>
+                    <span style="font-family: Arial, Verdana, sans-serif;">Copy and paste your youtube video url &nbsp;<span style="font-family: arial, sans-serif;">(required)</span>.</span></li>
+            </ol>
+        </div>
+        <p>
+            &nbsp;</p>
+    </section>
+    <section id="customize_your_own_site">
+        <div class="page-header"><h3>Customize your own site.</h3><hr class="notop"></div>
+        <ol style="font-family: arial, sans-serif; font-size: small;">
+            <li>
+                after do install your new website do this steps to customize your website style,logo,ads,etc...</li>
+            <li>
+                at first do login with the admin login information.</li>
+            <li>
+                you should see &nbsp;a fixed menu for the admin appeared at the right side of the screen.</li>
+            <li>
+                go to setting-&gt;setting and change the logo,favicon,website name,website default page title,keywords etc.</li>
+            <li>
+                <span style="color: rgb(68, 68, 68); font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px;">Header advertisement (recommended 900x100px) you can add html below.</span></li>
+            <li>
+                <span style="color: rgb(68, 68, 68); font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px;">Footer advertisement (recommended</span><span style="color: rgb(68, 68, 68); font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px;">&nbsp;</span><span style="color: rgb(68, 68, 68); font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px;">100x100px) you can add html below:</span></li>
+            <li>
+                go to setting-&gt;<b>custom style</b>&nbsp;and start change the style sheet as you like.</li>
+            <li>
+                go to setting-&gt;<b>languages</b>: and start insert or modify languages for your website.</li>
+            <li>
+                go to setting-&gt;<b>videos &nbsp;</b>to start manage videos inserted into your website by users or by admin.</li>
+            <li>Customize the earning coins from setting to tell the system how much coins will earned for every action</li>
+            <li>
+                have fun :) your site are now customized.</li>
+
+        </ol>
+    </section>
+    <section id="upgrading">
+        <div class="page-header"><h3>UPGRADING</h3>
+            <hr class="notop">
+        </div>
+        <p style="margin: 0px; padding: 10px 0px; border: 0px; outline: 0px; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 13px; vertical-align: baseline; box-sizing: border-box; color: rgb(80, 80, 80); line-height: 20.7999992370605px;">
+            Follow the steps below to upgrade your script to the latest version:</p>
+        <ol style="margin: 0px 0px 0px 20px; padding: 10px 0px; border: 0px; outline: 0px; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 13px; vertical-align: baseline; list-style: none; box-sizing: border-box; color: rgb(80, 80, 80); line-height: 20.7999992370605px;">
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                <p style="margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+                    Make sure you have backed up all the files inside of the &lsquo;application&rsquo; and &lsquo;assets&rsquo;
+                    folder</p>
+            </li>
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                <p style="margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+                    Upload and replace all files and folders in the application folder (EXCEPT CONFIG FOLDER) (note, if
+                    you have changed any of the language files, you do not need to replace the &lsquo;lang&rsquo; folder
+                    and you can keep your current custom language settings)</p>
+            </li>
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                <p style="margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+                    Upload and replace all the files inside of the &lsquo;assets&rsquo; folder</p>
+            </li>
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                <p style="margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+                    You can use the upgrade tools in your website to make this steps for you,
+                    just compress all files
+                     inside the script folder in zip file except
+                    <b>(config,language,assets/upload)</b>
+                    folder then select the zip
+                    file from setting at the bottom of the page then press upgrade and have fun :)
+                </p>
+            </li>
+            <li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal;">
+                <p style="margin: 0px; padding: 0px 0px 10px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; box-sizing: border-box;">
+                    Visit yoursite.com and see the updates</p>
+            </li>
+        </ol>
+        <p style="margin: 0px; padding: 10px 0px; border: 0px; outline: 0px; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 13px; vertical-align: baseline; box-sizing: border-box; color: rgb(80, 80, 80); line-height: 20.7999992370605px;">
+            Test your site is backup and everything should be all good to go!</p>
+    </section>
+    <section id="support">
+        <div class="page-header"><h3>Support</h3>
+            <hr class="notop">
+        </div>
+        <h1 style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+            &nbsp;</h1>
+
+        <p>
+            <img alt="" src="assets/images/image_1.png"></p>
+
+        <p>
+            &nbsp;</p>
+
+        <h1 style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+            E-mail:&nbsp;<a
+                href="mailto:&#112;&#104;&#112;&#46;&#112;&#111;&#119;&#101;&#114;&#46;&#97;&#114;&#116;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+                style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer;">
+            &#112;&#104;&#112;&#46;&#112;&#111;&#119;&#101;&#114;&#46;&#97;&#114;&#116;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+        </h1>
+        <p>
+            <a href="http://codecanyon.net/user/phppowerarts/follow">
+                <img src="http://icons.iconarchive.com/icons/icojam/new-year/128/bullfinch-follow-icon.png" alt="follow">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="http://i60.tinypic.com/qn4iop.png" alt="skype: phppowerarts"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://codecanyon.net/user/phppowerarts#contact">
+                <img src="http://icons.iconarchive.com/icons/icons-land/vista-people/128/Occupations-Technical-Support-Representative-Male-Light-icon.png"
+                     alt="email">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://codecanyon.net/downloads"
+               title="if you like Youtube Coins, please rate it this is help me to keep update forward">
+                <img src="http://i60.tinypic.com/2q8y2y1.png" alt="rate">
+            </a>
+        </p>
+    </section>
+
+</div>
+</body>
+</html>

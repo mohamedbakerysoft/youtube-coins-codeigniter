@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch",
+    "install": "napa",
+    "postinstall": "gulp --gulpfile gulpfile.js"
+  },
+  "napa": {
+    "calculator": "https://github.com/oscaruhp/SimpleCalculadora.git",
+    "jqurey-tokenize": "https://github.com/zellerda/Tokenize2.git",
+    "bootstrap-rtl": "https://github.com/morteza/bootstrap-rtl.git",
+    "timepicker": "https://github.com/jonthornton/jquery-timepicker.git",
+    "jQuery-Filestyle": "https://github.com/markusslima/jquery-filestyle.git"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.3",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-11",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "napa": "^2.3.0",
+    "webpack": "~4.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "bootstrap-3-typeahead": "^4.0.2",
+    "bootstrap-social": "~4.8.0",
+    "cypress": "^3.3.2",
+    "datatables": "~1.10.4",
+    "datatables-bootstrap": "0.0.1",
+    "datatables.net-plugins": "^1.10.18",
+    "file-saver": "^1.3.3",
+    "flot": "^0.8.0-alpha",
+    "font-awesome": "~4.6.3",
+    "fullcalendar": "^3.8.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jsplumb": "^2.3.2",
+    "metismenu": "^3.0.3",
+    "moment": "^2.20.1",
+    "myclabs.jquery.confirm": "^2.7.0",
+    "tableexport": "^3.3.9"
+  }
+}

@@ -1,0 +1,178 @@
+html,
+body {
+    height: 100%;
+}
+iframe {
+    width: 100%;
+    height: 380px;
+}
+
+.width-15 {
+    width: 15%;
+}
+
+.width-18 {
+    width: 18%;
+}
+
+.width-35 {
+    width: 35%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.favicon {
+    width: 20px;
+    height: 20px;
+}
+
+.ace_editor {
+    position: relative !important;
+    border: 1px solid lightgray;
+    margin: auto;
+    height: 600px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.scrollmargin {
+    height: 100px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin-right: auto;
+}
+
+h1 {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.subHeader {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.list {
+    list-style-type: disc;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.opacity-8 {
+    opacity: 0.8;
+}
+
+.main-thumb {
+    height: 280px;
+    width: 792px;
+}
+
+.first-video {
+    opacity: 0.7;
+    background-color: #000000;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.main-font-family {
+    font-family: "Indie Flower", cursive;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.yellow-coin {
+    color: #ffff00;
+}
+
+.policyDetails {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 10px;
+    color: #404553;
+}
+
+.subHeading {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table .thumb-img {
+    height: 100px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#googleSignInBtn .abcRioButton {
+    width: 350px !important;
+    font-size: 24px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.z-index-1000 {
+    z-index: 1000;
+}
+
+.z-index-1002 {
+    z-index: 1002;
+}
+
+.warning-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    text-align: center;
+}
+
+.warning-message p {
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
