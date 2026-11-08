@@ -47,7 +47,7 @@ class Admin_model extends CI_Model
 
     function username_exist()
     {
-        $data = $this->db->query("SELECT a_username FROM $this->table WHERE a_username = '" . $this->input->post("userName") . "'");
+        $data = $this->db->query("SELECT a_username FROM {$this->table} WHERE a_username = ?", array($this->input->post("userName")));
         if ($data->num_rows) {
             return true; // means this email address not available to used cause we found another person used it
         } else {
@@ -57,7 +57,7 @@ class Admin_model extends CI_Model
 
     function valid_password()
     {
-        $data = $this->db->query("SELECT a_password,a_username FROM $this->table WHERE a_password = '" . md5($this->input->post("password")) . "' and a_email = '" . $this->input->post("username") . "'");
+        $data = $this->db->query("SELECT a_password,a_username FROM {$this->table} WHERE a_password = ? AND a_email = ?", array(md5($this->input->post("password")), $this->input->post("username")));
 //        echo $data->num_rows;
         if ($data->num_rows) {
             return true; // means this email address not available to used cause we found another person used it
@@ -68,14 +68,14 @@ class Admin_model extends CI_Model
 
     function get_user_id()
     {
-        $data = $this->db->query("SELECT a_id,a_email,a_username FROM admin WHERE a_username = '" . $this->input->post("userName") . "'");
+        $data = $this->db->query("SELECT a_id,a_email,a_username FROM admin WHERE a_username = ?", array($this->input->post("userName")));
 
         return $data->row();
     }
 
     function get_user_Information()
     {
-        $data = $this->db->query("SELECT * FROM users WHERE u_id = '" . $this->session->userdata("userid") . "'");
+        $data = $this->db->query("SELECT * FROM users WHERE u_id = ?", array($this->session->userdata("userid")));
 
         return $data->row();
     }
