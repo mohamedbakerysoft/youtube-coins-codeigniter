@@ -38,6 +38,13 @@ Youtube Coins is a CodeIgniter-based rewarded video platform. Users earn coins f
 - DB user: `root`
 - DB password: `root`
 
+## Security note for new deployments
+
+- Set a unique `APP_ENCRYPTION_KEY` environment variable of at least 32 characters **before first use**. The application retains its legacy built-in key when this variable is absent to avoid silently breaking existing installations; this fallback is **not secure for new production installations**.
+- Do not rotate the key on an existing installation without a migration plan: sessions and previously encrypted values may become unreadable.
+- Replace all demo credentials before exposing the application to the internet. The demo accounts listed above are publicly documented and must never be used in production.
+- **Not yet cleared for marketplace resubmission:** the legacy PHP 7.4 / CodeIgniter version and other reviewer security findings still require code audit and remediation.
+
 ## Package Notes
 
 - The repository intentionally excludes runtime cache, logs, and local database contents.
