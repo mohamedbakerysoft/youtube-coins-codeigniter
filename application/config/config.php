@@ -244,7 +244,13 @@ $config['cache_path'] = '';
   | MUST set an encryption key.  See the user guide for info.
   |
  */
-$config['encryption_key'] = 'CodIgnitER2014*#CodeCanyonITEM';
+// Configure a unique secret through the environment on new installations.
+// Legacy fallback preserves existing sessions and encrypted data during upgrades.
+// Production deployments should set APP_ENCRYPTION_KEY before going live.
+$environmentEncryptionKey = getenv('APP_ENCRYPTION_KEY');
+$config['encryption_key'] = ($environmentEncryptionKey !== false && strlen($environmentEncryptionKey) >= 32)
+    ? $environmentEncryptionKey
+    : 'CodIgnitER2014*#CodeCanyonITEM';
 
 /*
   |--------------------------------------------------------------------------
